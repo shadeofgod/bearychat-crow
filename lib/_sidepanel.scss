@@ -1,0 +1,57 @@
+.sidePanel {
+  @include dark-theme();
+  border-color: $crow-darkest!important;
+
+  & > div[class*="header"] {
+    @include dark-theme();
+    border-bottom-color: $crow-darkest;
+
+    h4 {
+      color: $crow-lightest!important;
+    }
+
+    svg {
+      fill: $crow-lighter!important;
+    }
+  }
+
+  header[class*="sidePanelSubheader"] {
+    @include dark-theme();
+    border-bottom-color: $crow-darkest;
+
+    button[class^="btnQuickSwitch"] {
+      color: $crow-lightest!important;
+      border-color: $crow-light-gray;
+    }
+  }
+
+  div[class^="articleContainer"] > div[class^="article"] {
+    @include dark-theme();
+
+    article[class*="vchannel"] {
+      @include dark-theme();
+
+      &:hover {
+        background-color: $crow-dark-gray!important;
+        span[class*="textOverflow"] {
+          background-image: linear-gradient(to right, $crow-dark-gray-alpha, $crow-dark-gray 25px)!important;
+        }
+      }
+
+      &[class*="isActive"] {
+        background-color: $crow-dark-gray!important;
+        span[class*="textOverflow"] {
+          background-image: linear-gradient(to right, $crow-dark-gray-alpha, $crow-dark-gray 25px)!important;
+        }
+      }
+
+      h1[class*="title"] {
+        color: $crow-lightest;
+      }
+
+      span[class*="textOverflow"] {
+        background-image: linear-gradient(to right, $crow-dark-gray-alpha, $crow-darker 25px)!important;
+      }
+    }
+  }
+}

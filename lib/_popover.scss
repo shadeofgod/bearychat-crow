@@ -1,0 +1,13 @@
+.ant-popover {
+  div[class*="popover"] {
+    @include dark-theme($crow-dark, $crow-lightest);
+
+    .action {
+      color: $crow-lightest;
+
+      &:hover {
+        background-color: $crow-dark-gray;
+      }
+    }
+  }
+}

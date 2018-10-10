@@ -1,0 +1,4 @@
+@mixin dark-theme($bg-color: $crow-darker, $text-color: $crow-lightest) {
+  background-color: $bg-color!important;
+  color: $text-color!important;
+}

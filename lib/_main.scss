@@ -1,0 +1,38 @@
+.sidePanel + div[class*="main"] {
+  & > div[class*="mainHeader"] {
+    @include dark-theme();
+    border-bottom-color: $crow-darkest;
+
+    div[class*="name"] {
+      color: $crow-lightest!important;
+    }
+    div[class*="description"] {
+      color: $crow-lighter!important;
+    }
+    li[class*="featureWithDescription"] {
+      border-right-color: $crow-darkest!important;
+    }
+  }
+
+  & > div[class*="base"],
+  & > div[class*="container"] {
+    @include dark-theme($crow-dark);
+
+    span[class*="prior"] {
+      color: $crow-lightest;
+    }
+  }
+
+  & > section[class*="compose"] {
+    @include dark-theme();
+    border-top-color: $crow-darkest;
+
+    textarea[class*="editorTextarea"] {
+      @include dark-theme();
+    }
+
+    li[class*="tool"]:hover {
+      background-color: $crow-dark-gray;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.messageContent {
+  .bubble,
+  .messageContent-actions {
+    @include dark-theme($crow-dark-gray, $crow-lightest);
+
+    .action {
+      border-color: $crow-dark;
+    }
+  }
+
+  .forward-message {
+    div[class*="bubble"] {
+      @include dark-theme($crow-dark);
+    }
+  }
+
+  .markdown-renderer {
+    font-weight: 300;
+
+    .md-mention-link,
+    .md-mention-text {
+      color: $crow-link!important;
+      background-color: $crow-bgLink!important;
+
+      a[href] {
+        background-color: $crow-bgLink!important;
+      }
+    }
+  }
+
+}
+
