@@ -1,0 +1,29 @@
+{
+  "name": "bearychat-crow",
+  "version": "0.1.0",
+  "description": "a dark theme for bearychat",
+  "scripts": {
+    "compile": "node-sass --output-style expanded --precision 6 lib/crow.scss dist/crow.css",
+    "minify": "cleancss --level 1 --format breaksWith=lf --output dist/crow.min.css dist/crow.css",
+    "build": "npm run compile && npm run minify",
+    "watch": "nodemon --watch lib/ --ext scss --exec \"npm run build\""
+  },
+  "author": "shadeofgod <zoubingwu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^4.2.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadeofgod/bearychat-crow.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "web",
+    "bearychat",
+    "theme"
+  ]
+}
